@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btnFacebookLogin = findViewById(R.id.btnFacebookLogin);
         btnGoogleLogin = findViewById(R.id.btnGoogleLogin);
 
-        // Resize the social media icons
+        // Resize icons
         resizeButtonDrawable(btnFacebookLogin, R.drawable.ic_facebook, 24, 24);
         resizeButtonDrawable(btnGoogleLogin, R.drawable.ic_googleplus, 24, 24);
 
@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Helper method to resize button drawables
     private void resizeButtonDrawable(Button button, int drawableId, int width, int height) {
         Drawable drawable = ContextCompat.getDrawable(this, drawableId);
         if (drawable != null) {

@@ -21,7 +21,7 @@ public class SecondActivity extends AppCompatActivity {
         btnFollow = findViewById(R.id.btnFollow);
         btnInfo = findViewById(R.id.btnInfo);
 
-        // Resize the button icons
+        // Resize icons
         resizeButtonDrawable(btnFollow, R.drawable.ic_follow, 24, 24);
         resizeButtonDrawable(btnInfo, R.drawable.ic_info, 24, 24);
 
@@ -33,7 +33,6 @@ public class SecondActivity extends AppCompatActivity {
         });
     }
 
-    // Helper method to resize button drawables
     private void resizeButtonDrawable(Button button, int drawableId, int width, int height) {
         Drawable drawable = ContextCompat.getDrawable(this, drawableId);
         if (drawable != null) {
